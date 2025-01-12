@@ -1,34 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import  React from 'react'
+import tr from './assets/images/pattern-squiggly-line-top.svg'
+import bl from './assets/images/pattern-squiggly-line-bottom.svg'
+import patternLines from './assets/images/pattern-lines.svg'
+import patternCicles from './assets/images/pattern-circle.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main className={`min-h-screen relative overflow-clip`}>
+      <img src={tr} alt="" className='absolute right-0 md:-right-[7%] lg:-right-[15%] p-0 size-[50vw] max-h-44 top-0'/>
+      <img src={patternLines} alt="" className='absolute top-0 '/>
+      <img src={patternCicles} alt="" className='absolute  top-1/2 -right-5 size-24 md:right-10 lg:right-1/4 md:size-32 lg:size-48' />
+      <img src={patternCicles} alt="" className='absolute size-28 -top-7 -left-7 md:size-32 lg:size-48' />
+      <img src={bl} alt="" className='absolute bottom-0 left-0 max-h-80'/>
+      
+     
+
+    </main>
   )
 }
 
