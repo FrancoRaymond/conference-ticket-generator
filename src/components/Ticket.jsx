@@ -8,9 +8,9 @@ const Ticket = () => {
   const { formData } = useAppContext();
 
   return (
-    <div className="max-w-lg w-full bg-transparent flex flex-col items-center text-white mx-auto">
+    <div className="max-w-2xl w-full bg-transparent flex flex-col items-center text-white mx-auto">
       <img src={logo} alt="Logo" />
-      <h1 className="text-2xl sm:text-4xl font-bold text-center px-5 mt-5 leading-none">
+      <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center px-5 mt-5 leading-none">
         Congrats,
         <span className="bg-gradient-to-r from-[#f67464] via-[#f67464] to-white text-transparent bg-clip-text">
           {formData.fullName.split(" ")[0]}
@@ -32,7 +32,7 @@ const Ticket = () => {
             <div>
               <img src={logo} alt="" className="w-40" />
               <span className="text-gray-400 text-sm ml-9">
-                Jan 31, 2025 / Austin, TX
+                Jan 31, 2025 / Gauteng, PTA
               </span>
             </div>
             <div className="flex gap-3 items-center">

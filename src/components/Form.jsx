@@ -27,10 +27,10 @@ const Form = ({ setNoEmptyFields }) => {
   return (
     <div className="bg-transparent flex flex-col items-center text-white mx-auto">
       <img src={logo} alt="Logo" />
-      <h1 className="text-2xl font-semibold text-center px-5 mt-5 leading-none">
+      <h1 className="text-2xl lg:text-5xl lg:max-w-2xl font-semibold text-center px-5 mt-5 leading-none">
         Your journey to coding conf {new Date().getFullYear()} starts here!
       </h1>
-      <p className="text-gray-400 text-center px-5 mt-3">
+      <p className="text-gray-400 text-center px-5 mt-3 lg:text-[20px]">
         Secure your spot at next year's biggest coding conference
       </p>
       <form onSubmit={handleSubmit} className="py-5 flex flex-col gap-5 z-20 max-w-lg w-full">
