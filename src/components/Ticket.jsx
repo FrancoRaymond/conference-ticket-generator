@@ -6,6 +6,11 @@ import { useAppContext } from "../context/context";
 
 const Ticket = () => {
   const { formData } = useAppContext();
+  const date = new Date()
+  const months = [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+  ];
 
   return (
     <div className="max-w-2xl w-full bg-transparent flex flex-col items-center text-white mx-auto">
@@ -32,7 +37,7 @@ const Ticket = () => {
             <div>
               <img src={logo} alt="" className="w-40" />
               <span className="text-gray-400 text-sm ml-9">
-                Jan 31, 2025 / Gauteng, PTA
+                {date.getDate()} {months[date.getMonth()]}, {date.getFullYear()} / Gauteng, PTA
               </span>
             </div>
             <div className="flex gap-3 items-center">
@@ -51,7 +56,7 @@ const Ticket = () => {
             </div>
           </div>
           <span className="text-gray-300 rotate-90 items-center flex text-lg size-fit mt-auto mb-auto">
-            #01609
+            #{Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000}
           </span>
         </div>
       </div>
@@ -60,4 +65,3 @@ const Ticket = () => {
 };
 
 export default Ticket;
-
